@@ -9,82 +9,87 @@ Sau khi kiểm tra các API hoạt động đúng với Postman, chúng ta sẽ 
 1. Mở tệp **config.js** trong thư mục **fcj-serverless-frontend** đã được tải về từ phần 2
 - Thay giá trị cho **APP_API_URL** bằng URL của bạn:
 
-![CreateRestAPI](/images/4-config-api-gw/4-config-api-gw-36.png?featherlight=false&width=90pc)
-![UpdateURL](/images/6-test-front-end/6-test-front-end-14.png?featherlight=false&width=90pc)
+![CreateRestAPI](/images/6-test-front-end/6-test-front-end-0.png?featherlight=false&width=90pc)
 
-2. Mở tệp **App.js** trong thư mục **fcj-serverless-frontend/src**, sửa giá trị của biến **isAdmin** thành **true**
+![UpdateURL](/images/6-test-front-end/6-test-front-end-1.png?featherlight=false&width=90pc)
+
+2. Mở tệp **App.js** trong thư mục **fcj-serverless-frontend/src/**, sửa giá trị của biến **isAdmin** thành **true**
 3. Chạy các dòng lệnh dưới đây:
 ```
 yarn build
 aws s3 cp build s3://fcj-book-store --recursive
 ```
-4. Trở lại với trang bạn mở ứng dụng web trong phần 2. Ứng dụng đã hiện thông tin sách, nhưng vẫn chưa có ảnh vì chúng ta chưa tải ảnh lên.
+4. Dán endpoint của S3 static web vào browser của bạn. Ứng dụng đã hiện thông tin sách, nhưng vẫn chưa có ảnh vì chúng ta chưa tải ảnh lên.
 
-![WebApp](/images/6-test-front-end/6-test-front-end-1.png?featherlight=false&width=90pc)
+![WebApp](/images/6-test-front-end/6-test-front-end-2.png?featherlight=false&width=90pc)
 
-Vậy API đọc đã hoạt động đúng.
+Vậy API đọc dữ liệu đã hoạt động đúng.
+
 5. Kiểm tra API ghi dữ liệu:
 - Ấn sang tab **Management**
 - Ấn nút **Update**
 
-![WebApp](/images/6-test-front-end/6-test-front-end-2.png?featherlight=false&width=90pc)
+![WebApp](/images/6-test-front-end/6-test-front-end-3.png?featherlight=false&width=90pc)
 
 - Sửa bất kỳ thông tin gì bạn muốn trừ **id**
 - Ấn nút **Choose image**
-- Chọn ảnh mà bạn muốn tải lên, bạn có thể tải ảnh sau:
+- Đưa ảnh dưới đây tải lên bucket:
 {{%attachments title="Image" pattern=".*\.(jpeg)$"/%}}
 - Ấn nút **Update**
 
-![WebApp](/images/6-test-front-end/6-test-front-end-3.png?featherlight=false&width=90pc)
-
-- Ấn nút **OK**
-
 ![WebApp](/images/6-test-front-end/6-test-front-end-4.png?featherlight=false&width=90pc)
 
-- Ảnh và thông tin được cập nhật
+- Ấn nút **OK**
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-5.png?featherlight=false&width=90pc)
 
-- Ấn sang tab **Create new book** ghi dữ liệu mới vào cơ sở dữ liệu
-- Nhập id bằng 5
-- Nhập tên: **Learning DevOps**
-- Nhập tác giả: **Mikeal Krief**
-- Nhập thể loại: **IT**
-- Nhập giá: **14.95**
-- Nhập mô tả: **The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps**
-- Ấn nút **Choose File** để tải ảnh lên
-- Ấn nút **Create**
+- Ảnh và thông tin được cập nhật
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-6.png?featherlight=false&width=90pc)
 
-- Ấn nút **OK**
+- Ấn sang tab **Create new book** ghi dữ liệu mới vào cơ sở dữ liệu
+- Nhập id bằng 5
+- Nhập tên: **Amazon Web Services in Action**
+- Nhập tác giả: **Andreas Wittig**
+- Nhập thể loại: **IT**
+- Nhập giá: **59.99**
+- Nhập mô tả: **Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.**
+
+{{%attachments title="Image" pattern=".*\.(jpg)$"/%}}
+
+- Ấn nút **Choose File** để tải ảnh lên
+- Ấn nút **Create**
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-7.png?featherlight=false&width=90pc)
 
-- Hiển thị thông tin vừa tạo
+- Ấn nút **OK**
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-8.png?featherlight=false&width=90pc)
 
-6. Kiểm tra API xoá  
-- Ấn sang tab **Management**
-- Ấn nút **Update**
+- Hiển thị thông tin vừa tạo
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-9.png?featherlight=false&width=90pc)
 
-- Ấn nút **Delete**
+1. Kiểm tra API xoá  
+- Ấn sang tab **Management**
+- Ấn nút **Update**
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-10.png?featherlight=false&width=90pc)
 
-- Ấn nút **OK** để xác nhận xoá
+- Ấn nút **Delete**
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-11.png?featherlight=false&width=90pc)
 
-- Ấn nút **OK**
+- Ấn nút **OK** để xác nhận xoá
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-12.png?featherlight=false&width=90pc)
 
-- Xem kết quả sau khi xoá: không còn xuất hiện thông tin sách nữa
+- Ấn nút **OK**
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-13.png?featherlight=false&width=90pc)
+
+- Xem kết quả sau khi xoá: không còn xuất hiện thông tin sách nữa
+
+![WebApp](/images/6-test-front-end/6-test-front-end-14.png?featherlight=false&width=90pc)
 
 Chúng ta đã hoàn thành việc xây dựng một ứng dụng web đơn giản theo mô hình serverless. Để xây dựng ứng dụng serverless nhanh hơn, trong phần tiếp theo chúng ta sẽ sử dụng AWS Serverless Application Model (SAM). SAM cung cấp cú pháp để diễn đạt các hàm, API, cơ sở dữ liệu và event source mappings.

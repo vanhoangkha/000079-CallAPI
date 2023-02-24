@@ -25,7 +25,7 @@
             "S": "A step-by-step guide to creating fast, secure web with Go"
           },
           "image": {
-            "S": "https://book-image-resize-store.s3.<AWS-REGION>.amazonaws.com/LetGoBook.png"
+            "S": "https://book-image-resize-store.s3.AWS-REGION.amazonaws.com/LetGoBook.png"
           }
         }
       }
@@ -91,7 +91,7 @@
             "S": "This book guide to using Docker in real projects"
           },
           "image": {
-            "S": "https://book-image-resize-store.s3.<AWS-REGION>.amazonaws.com/DockerInAction.jpeg"
+            "S": "https://book-image-resize-store.s3.AWS-REGION.amazonaws.com/DockerInAction.jpeg"
           }
         }
       }
@@ -139,7 +139,7 @@
             "S": "A beginner's guide to learning the basic of Java"
           },
           "image": {
-            "S": "https://book-image-resize-store.s3.<AWS-REGION>.amazonaws.com/Java.jpg"
+            "S": "https://book-image-resize-store.s3.AWS-REGION.amazonaws.com/Java.jpg"
           }
         }
       }
@@ -172,22 +172,22 @@
             "N": "0"
           },
           "name": {
-            "S": "Python Coding"
+            "S": "Learn AWS Serverless Computing: A beginner's guide to using AWS Lambda, Amazon API Gateway, and services from Amazon Web Services"
           },
           "author": {
-            "S": "Doan Minh Phung"
+            "S": "Scott Patterson"
           },
           "category": {
             "S": "IT"
           },
           "price": {
-            "S": "9.1"
+            "S": "41.99"
           },
           "description": {
-            "S": "This book guide to using Python to create lambda"
+            "S": "Build, deploy, test, and run cloud-native serverless applications using AWS Lambda and other popular AWS services"
           },
           "image": {
-            "S": "https://book-image-resize-store.s3.<AWS-REGION>.amazonaws.com/PythonCoding.jpeg"
+            "S": "https://book-image-resize-store.s3.AWS-REGION.amazonaws.com/PythonCoding.jpeg"
           }
         }
       }

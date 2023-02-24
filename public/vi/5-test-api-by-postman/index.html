@@ -12,21 +12,21 @@
     <title>Kiểm tra API với Postman :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1677198669" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1677198669" rel="stylesheet">
-    <link href="/css/hybrid.css?1677198669" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1677198669" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1677198669" rel="stylesheet">
-    <link href="/css/auto-complete.css?1677198669" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1677198669" rel="stylesheet">
-    <link href="/css/theme.css?1677198669" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1677198669" rel="stylesheet">
+    <link href="/css/nucleus.css?1677211254" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1677211254" rel="stylesheet">
+    <link href="/css/hybrid.css?1677211254" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1677211254" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1677211254" rel="stylesheet">
+    <link href="/css/auto-complete.css?1677211254" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1677211254" rel="stylesheet">
+    <link href="/css/theme.css?1677211254" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1677211254" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1677198669" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1677211254" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1677198669"></script>
+    <script src="/js/jquery-3.3.1.min.js?1677211254"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1677198669"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1677198669"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1677211254"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1677211254"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1677198669"></script>
+<script type="text/javascript" src="/js/search.js?1677211254"></script>
 
     
   </div>
@@ -674,7 +674,7 @@
 </ol>
 <ul>
 <li>Chọn <strong>GET</strong> method</li>
-<li>Nhập URL của API đọc đã ghi lại từ bước trước</li>
+<li>Nhập InvokURL của GET API đã ghi lại từ bước trước</li>
 <li>Ấn nút <strong>Send</strong></li>
 </ul>
 <p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-1.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
@@ -688,24 +688,21 @@
 </ol>
 <ul>
 <li>Chọn <strong>POST</strong> method</li>
-<li>Nhập URL của API ghi đã ghi lại từ bước trước</li>
+<li>Nhập InvokURL của POST API đã ghi lại từ bước trước</li>
 <li>Trong mục <strong>Body</strong>, chọn <strong>raw</strong></li>
 <li>Sao chép đoạn dưới đây:</li>
 </ul>
 <pre tabindex="0"><code>{
     &#34;id&#34;: &#34;5&#34;,
     &#34;rv_id&#34;: 0,
-    &#34;name&#34;: &#34;Learning DevOps&#34;,
-    &#34;author&#34;: &#34;Mikeal Krief&#34;,
-    &#34;price&#34;: &#34;14.95&#34;,
+    &#34;name&#34;: &#34;Amazon Web Services in Action 2nd Edition&#34;,
+    &#34;author&#34;: &#34;Andreas Wittig&#34;,
+    &#34;price&#34;: &#34;59.99&#34;,
     &#34;category&#34;: &#34;IT&#34;,
-    &#34;description&#34;: &#34;The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps&#34;,
-    &#34;image&#34;: &#34;https://book-image-resize-store.s3.&lt;AWS-REGION&gt;.amazonaws.com/LearningDevOps.jpeg&#34;
+    &#34;description&#34;: &#34;Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You&#39;ll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.&#34;,
+    &#34;image&#34;: &#34;https://book-image-resize-store.s3.ap-southeast-2.amazonaws.com/aws.jpg&#34;
 }
-</code></pre><ul>
-<li>Thay <strong><!-- raw HTML omitted --></strong> bằng vùng mà bạn tạo S3 bucket <strong>book-image-resize-store</strong>, ví dụ: <strong>ap-southeast-2</strong></li>
-</ul>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-4.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+</code></pre><p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-3.png?featherlight=false&amp;width=90pc" alt="TestCreateAPI"></p>
 <ol start="2">
 <li>Chuyển sang mục <strong>Headers</strong></li>
 </ol>
@@ -713,37 +710,37 @@
 <li>Thêm KEY là <strong>Content-Type</strong>, VALUE là <strong>application/json</strong></li>
 <li>Ấn nút <strong>Send</strong></li>
 </ul>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-5.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-4.png?featherlight=false&amp;width=90pc" alt="TestCreateAPI"></p>
 <ol start="3">
 <li>Đợi một chút, xem kết quả trả về</li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-5.png?featherlight=false&amp;width=90pc" alt="TestCreateAPI"></p>
 <ol start="4">
 <li>Mở bảng <strong>Books</strong> trong bảng điều khiển của DynamoDB kiểm tra dữ liệu</li>
 </ol>
 <ul>
 <li>Trước khi gọi API ghi</li>
 </ul>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-3.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&amp;width=90pc" alt="TestCreateAPI"></p>
 <ul>
 <li>Sau khi gọi API ghi</li>
 </ul>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-7.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-7.png?featherlight=false&amp;width=90pc" alt="TestCreateAPI"></p>
 <h4 id="kiểm-tra-api-xoá">Kiểm tra API xoá</h4>
 <p>Vì Lambda function xoá khi thực hiện sẽ xoá ảnh được tải lên bởi người dùng, nên chúng ta tải thủ công ảnh lên S3 bucket để API có thể chạy đúng.</p>
 <ol>
 <li>Mở bảng điều khiển của <a href="https://s3.console.aws.amazon.com/s3/buckets?region=ap-southeast-2&amp;region=ap-southeast-2">Amazon S3</a></li>
 <li>Ấn vào bucket <strong>book-image-store</strong></li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-8.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-8.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="3">
 <li>Ấn nút <strong>Upload</strong></li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-9.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-9.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="4">
 <li>Ấn nút <strong>Add files</strong></li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-10.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-10.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="5">
 <li>Tải ảnh sau về máy của bạn và chọn nó để tải lên bucket</li>
 </ol>
@@ -762,8 +759,8 @@
 		
 			
 				<li>
-					<a href="/5-test-api-by-postman/_index.vi.files/LearningDevOps.jpeg" >
-						LearningDevOps.jpeg
+					<a href="/5-test-api-by-postman/_index.vi.files/aws.jpg" >
+						aws.jpg
 					</a>
 					(24 ko)
 				</li>
@@ -776,32 +773,32 @@
 
 
 6. Ấn nút <strong>Upload</strong></p>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-11.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-11.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="7">
 <li>Sau khi tải xong, chuyển sang bucket <strong>book-image-resize-store</strong> kiểm tra. Đây là kết quả chạy của reszie_image Lambda funtion</li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-12.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-12.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="8">
 <li>Trở lại với Postman, thêm một tab mới để thực hiện API xoá</li>
 </ol>
 <ul>
-<li>Chọn <strong>GET</strong> method</li>
-<li>Nhập URL của API xoá dữ liệu đã ghi lại từ bước trước, thay <strong>/{id}</strong> bằng <strong>/5</strong></li>
+<li>Chọn <strong>DELETE</strong> method</li>
+<li>Nhập InvokeURL của DELETE API đã ghi lại từ bước trước, thay <strong>/{id}</strong> bằng <strong>/5</strong></li>
 <li>Ấn nút <strong>Send</strong></li>
 </ul>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-13.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-13.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="9">
 <li>Kiểm tra kết quả trả về:</li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-14.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-14.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="10">
 <li>Mở bảng <strong>Books</strong> trong bảng điều khiển của DynamoDB kiểm tra dữ liệu</li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-15.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 <ol start="11">
-<li>Mở bucket <strong>book-image-resize-store</strong> kiểm tra kết quả. Ảnh <strong>LearningDevOps.jpeg</strong> đã xoá.</li>
+<li>Mở bucket <strong>book-image-resize-store</strong> kiểm tra kết quả. Ảnh <strong>aws.jpg</strong> đã xoá.</li>
 </ol>
-<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-16.png?featherlight=false&amp;width=90pc" alt="TestListAPI"></p>
+<p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-15.png?featherlight=false&amp;width=90pc" alt="TestDeleteAPI"></p>
 
 
 
@@ -1096,19 +1093,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1677198669"></script>
-    <script src="/js/perfect-scrollbar.min.js?1677198669"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1677198669"></script>
-    <script src="/js/jquery.sticky.js?1677198669"></script>
-    <script src="/js/featherlight.min.js?1677198669"></script>
-    <script src="/js/highlight.pack.js?1677198669"></script>
+    <script src="/js/clipboard.min.js?1677211254"></script>
+    <script src="/js/perfect-scrollbar.min.js?1677211254"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1677211254"></script>
+    <script src="/js/jquery.sticky.js?1677211254"></script>
+    <script src="/js/featherlight.min.js?1677211254"></script>
+    <script src="/js/highlight.pack.js?1677211254"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1677198669"></script>
-    <script src="/js/learn.js?1677198669"></script>
-    <script src="/js/hugo-learn.js?1677198669"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1677211254"></script>
+    <script src="/js/learn.js?1677211254"></script>
+    <script src="/js/hugo-learn.js?1677211254"></script>
 
-    <link href="/mermaid/mermaid.css?1677198669" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1677198669"></script>
+    <link href="/mermaid/mermaid.css?1677211254" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1677211254"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

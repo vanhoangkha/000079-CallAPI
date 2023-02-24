@@ -28,36 +28,35 @@ In this step, we will test operation of the APIs using [Postman](https://www.pos
 {
     "id": "5",
     "rv_id": 0,
-    "name": "Learning DevOps",
-    "author": "Mikeal Krief",
-    "price": "14.95",
+    "name": "Amazon Web Services in Action 2nd Edition",
+    "author": "Andreas Wittig",
+    "price": "59.99",
     "category": "IT",
-    "description": "The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps",
-    "image": "https://book-image-resize-store.s3.<AWS-REGION>.amazonaws.com/LearningDevOps.jpeg"
+    "description": "Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.",
+    "image": "https://book-image-resize-store.s3.ap-southeast-2.amazonaws.com/aws.jpg"
 }
 ```
-- Replace **<AWS-REGION>** with the region where you created the S3 **book-image-resize-store** bucket, for example: **ap-southeast-2**
 
-![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-4.png?featherlight=false&width=90pc)
+![TestCreateAPI](/images/5-test-api-by-postman/5-test-api-by-postman-3.png?featherlight=false&width=90pc)
 
 2. Switch to **Headers**
 - Add KEY is **Content-Type**, VALUE is **application/json**
 - Click **Send**
 
-![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-5.png?featherlight=false&width=90pc)
+![TestCreateAPI](/images/5-test-api-by-postman/5-test-api-by-postman-4.png?featherlight=false&width=90pc)
 
 3. Wait a moment, see the results returned
 
-![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&width=90pc)
+![TestCreateAPI](/images/5-test-api-by-postman/5-test-api-by-postman-5.png?featherlight=false&width=90pc)
 
 4. Open **Books** table in DynamoDB console to check data
 - Before call the write API
 
-![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-3.png?featherlight=false&width=90pc)
+![TestCreateAPI](/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&width=90pc)
 
 - After call the write API
 
-![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-7.png?featherlight=false&width=90pc)
+![TestCreateAPI](/images/5-test-api-by-postman/5-test-api-by-postman-7.png?featherlight=false&width=90pc)
 
 #### Test the deleting API
 Since the delete Lambda function on execution deletes images uploaded by the user, we manually upload the images to the S3 bucket so the API can run properly.
@@ -78,7 +77,7 @@ Since the delete Lambda function on execution deletes images uploaded by the use
 
 5. Tải ảnh sau về máy của bạn và chọn nó để tải lên bucket
 
-{{%attachments title="Image" pattern=".*\.(jpeg)$"/%}}
+{{%attachments title="Image" pattern=".*\.(jpg)$"/%}}
 6. Click **Upload**
 ![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-11.png?featherlight=false&width=90pc)
 
@@ -99,8 +98,8 @@ Since the delete Lambda function on execution deletes images uploaded by the use
 
 10. Open **Books** table in DynamoDB console to check data
 
+![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&width=90pc)
+
+11. Open **book-image-resize-store** bucket to check object. The **aws.jpg** is deleted
+
 ![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-15.png?featherlight=false&width=90pc)
-
-11. Open **book-image-resize-store** bucket to check object. The **LearningDevOps.jpeg** is deleted
-
-![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-16.png?featherlight=false&width=90pc)
