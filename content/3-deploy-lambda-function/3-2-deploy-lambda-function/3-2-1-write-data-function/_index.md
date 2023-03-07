@@ -10,7 +10,7 @@ In this step, we will update the code for the **book_create** created function i
 
 ![LambdaConsole](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-1.png?featherlight=false&width=90pc)
 
-2. Click ***book_create** function
+2. Click **book_create** function
 
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-2.png?featherlight=false&width=90pc)
 
@@ -81,8 +81,9 @@ def lambda_handler(event, context):
     return response
 ```
 - Then, click **Deploy**
+
 {{% notice note %}}
-The new code handles the images that the user wants to upload and is saved in the S3 bucket
+The code handles the images that the user wants to upload and is saved in the S3 bucket
 {{% /notice %}}
 
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-3.png?featherlight=false&width=90pc)

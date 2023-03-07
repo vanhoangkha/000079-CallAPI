@@ -50,12 +50,11 @@ In the first step in this workshop, we will host the web application (front-end)
 
 ![SettingBucket](/images/2-front-end-deployment/2-front-end-deployment-10.png?featherlight=false&width=90pc)
 
-- Sau khi kích hoạt thành công, bạn hãy ghi lại đường dẫn của web
+- After successfully enabling, please write down the path of the web
 
 ![SettingBucket](/images/2-front-end-deployment/2-front-end-deployment-11.png?featherlight=false&width=90pc)
 
-11. After successful enable, please  take note of the path of the web:
-- Select **Permissions** tab
+11. Select **Permissions** tab
 - Click **Edit** of **Bucket policy** pattern
 
 ![SettingBucket](/images/2-front-end-deployment/2-front-end-deployment-12.png?featherlight=false&width=90pc)
@@ -83,7 +82,7 @@ In the first step in this workshop, we will host the web application (front-end)
 - Open command-line/terminal in the folder where you want to save the source code
 - Copy the below commands
 ```
-git clone https://github.com/PhamTHHanh/fcj-serverless-frontend.git
+git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-Workshop.git
 cd fcj-serverless-frontend
 yarn build
 ```

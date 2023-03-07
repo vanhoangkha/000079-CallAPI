@@ -11,8 +11,8 @@ pre : " <b> 3.1 </b> "
 ![DynamoDBConsole](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-1.png?featherlight=false&width=90pc)
 
 3. Nhập tên cho bảng: **Books**
-- Nhập parition key: **id**
-- Nhập sort key: **rv_id** (review id)
+- Nhập parition key: `id`
+- Nhập sort key: `rv_id` (review id)
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-2.png?featherlight=false&width=90pc)
 
@@ -37,9 +37,9 @@ Vậy là bạn đã tạo xong bảng **Books** với Local secondary index là
 
 {{%attachments title="Data" pattern=".*\.(json)$"/%}}
 
-- Mở tệp, sau đó thay toàn bộ **<AWS-REGION>** bằng vùng mà bạn tạo S3 bucket **book-image-resize-store**, ví dụ: **ap-southeast-2**
+8. Mở tệp, sau đó thay toàn bộ **`<AWS-REGION>`** bằng vùng mà bạn tạo S3 bucket **book-image-resize-store**, ví dụ: **ap-southeast-2**
 
-8. Chạy câu lệnh sau tại thư mục mà bạn lưu tệp dynamoDB.json
+9. Chạy câu lệnh sau tại thư mục mà bạn lưu tệp dynamoDB.json
 ```
 aws dynamodb batch-write-item --request-items file://dynamoDB.json
 ```

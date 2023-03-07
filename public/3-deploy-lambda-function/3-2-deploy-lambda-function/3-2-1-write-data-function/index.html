@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Writing Lambda function :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1677211254" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1677211254" rel="stylesheet">
-    <link href="/css/hybrid.css?1677211254" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1677211254" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1677211254" rel="stylesheet">
-    <link href="/css/auto-complete.css?1677211254" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1677211254" rel="stylesheet">
-    <link href="/css/theme.css?1677211254" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1677211254" rel="stylesheet">
+    <link href="/css/nucleus.css?1678171367" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678171367" rel="stylesheet">
+    <link href="/css/hybrid.css?1678171367" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678171367" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678171367" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678171367" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678171367" rel="stylesheet">
+    <link href="/css/theme.css?1678171367" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678171367" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1677211254" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678171367" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1677211254"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678171367"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1677211254"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1677211254"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678171367"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678171367"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1677211254"></script>
+<script type="text/javascript" src="/js/search.js?1678171367"></script>
 
     
   </div>
@@ -225,7 +225,7 @@
   
     
     <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-write-data-function/" title="Writing Lambda function" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -677,7 +677,7 @@
 </ol>
 <p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-1.png?featherlight=false&amp;width=90pc" alt="LambdaConsole"></p>
 <ol start="2">
-<li>Click *<strong>book_create</strong> function</li>
+<li>Click <strong>book_create</strong> function</li>
 </ol>
 <p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-2.png?featherlight=false&amp;width=90pc" alt="LambdaCreateFunction"></p>
 <ol start="3">
@@ -747,12 +747,12 @@ def lambda_handler(event, context):
   
     return response
 </code></pre><ul>
-<li>Then, click <strong>Deploy</strong>
-
-<div class="notices note" ><p>The new code handles the images that the user wants to upload and is saved in the S3 bucket</p>
-</div>
-</li>
+<li>Then, click <strong>Deploy</strong></li>
 </ul>
+
+<div class="notices note" ><p>The code handles the images that the user wants to upload and is saved in the S3 bucket</p>
+</div>
+
 <p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-3.png?featherlight=false&amp;width=90pc" alt="LambdaCreateFunction"></p>
 <ol start="4">
 <li>Give the Lambda function permission to write a file to the S3 bucket.</li>
@@ -1087,19 +1087,19 @@ def lambda_handler(event, context):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1677211254"></script>
-    <script src="/js/perfect-scrollbar.min.js?1677211254"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1677211254"></script>
-    <script src="/js/jquery.sticky.js?1677211254"></script>
-    <script src="/js/featherlight.min.js?1677211254"></script>
-    <script src="/js/highlight.pack.js?1677211254"></script>
+    <script src="/js/clipboard.min.js?1678171367"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678171367"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678171367"></script>
+    <script src="/js/jquery.sticky.js?1678171367"></script>
+    <script src="/js/featherlight.min.js?1678171367"></script>
+    <script src="/js/highlight.pack.js?1678171367"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1677211254"></script>
-    <script src="/js/learn.js?1677211254"></script>
-    <script src="/js/hugo-learn.js?1677211254"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678171367"></script>
+    <script src="/js/learn.js?1678171367"></script>
+    <script src="/js/hugo-learn.js?1678171367"></script>
 
-    <link href="/mermaid/mermaid.css?1677211254" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1677211254"></script>
+    <link href="/mermaid/mermaid.css?1678171367" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678171367"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -82,8 +82,9 @@ def lambda_handler(event, context):
     return response
 ```
 - Sau đó ấn **Deploy**
+
 {{% notice note %}}
-Code mới xử lý ảnh mà người dùng muốn tải lên và được lưu trong S3 bucket
+Code xử lý ảnh mà người dùng muốn tải lên và được lưu trong S3 bucket
 {{% /notice %}}
 
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-3.png?featherlight=false&width=90pc)

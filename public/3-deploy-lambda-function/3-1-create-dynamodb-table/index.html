@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create DynamoDB table :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1677211254" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1677211254" rel="stylesheet">
-    <link href="/css/hybrid.css?1677211254" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1677211254" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1677211254" rel="stylesheet">
-    <link href="/css/auto-complete.css?1677211254" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1677211254" rel="stylesheet">
-    <link href="/css/theme.css?1677211254" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1677211254" rel="stylesheet">
+    <link href="/css/nucleus.css?1678171367" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678171367" rel="stylesheet">
+    <link href="/css/hybrid.css?1678171367" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678171367" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678171367" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678171367" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678171367" rel="stylesheet">
+    <link href="/css/theme.css?1678171367" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678171367" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1677211254" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678171367" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1677211254"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678171367"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1677211254"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1677211254"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678171367"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678171367"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1677211254"></script>
+<script type="text/javascript" src="/js/search.js?1678171367"></script>
 
     
   </div>
@@ -166,7 +166,7 @@
   
     
     <li data-nav-id="/3-deploy-lambda-function/3-1-create-dynamodb-table/" title="Create DynamoDB table" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -674,8 +674,8 @@
 <li>Enter table name: <strong>Books</strong></li>
 </ol>
 <ul>
-<li>Enter parition key: <strong>id</strong></li>
-<li>Enter sort key: <strong>rv_id</strong> (review id)</li>
+<li>Enter parition key: <code>id</code></li>
+<li>Enter sort key: <code>rv_id</code> (review id)</li>
 </ul>
 <p><img src="/images/3-deploy-lambda-function/3-1-create-dynamodb-table-2.png?featherlight=false&amp;width=90pc" alt="CreateTable"></p>
 <ol start="4">
@@ -729,11 +729,13 @@
 </section>
 
 
-<ul>
-<li>Open this file, replace all <strong><!-- raw HTML omitted --></strong> with the region where you created the S3 <strong>book-image-resize-store</strong> bucket, for example: <strong>ap-southeast-2</strong></li>
-</ul>
 <ol start="8">
-<li>Run the following command in the directory where you save the dynamoDB.json</li>
+<li>
+<p>Open this file, replace all <strong><code>&lt;AWS-REGION&gt;</code></strong> with the region where you created the S3 <strong>book-image-resize-store</strong> bucket, for example: <strong>ap-southeast-2</strong></p>
+</li>
+<li>
+<p>Run the following command in the directory where you save the dynamoDB.json</p>
+</li>
 </ol>
 <pre tabindex="0"><code>aws dynamodb batch-write-item --request-items file://dynamoDB.json
 </code></pre><p><img src="/images/5-test-api-by-postman/5-test-api-by-postman-3.png?featherlight=false&amp;width=90pc" alt="BooksData"></p>
@@ -1032,19 +1034,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1677211254"></script>
-    <script src="/js/perfect-scrollbar.min.js?1677211254"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1677211254"></script>
-    <script src="/js/jquery.sticky.js?1677211254"></script>
-    <script src="/js/featherlight.min.js?1677211254"></script>
-    <script src="/js/highlight.pack.js?1677211254"></script>
+    <script src="/js/clipboard.min.js?1678171367"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678171367"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678171367"></script>
+    <script src="/js/jquery.sticky.js?1678171367"></script>
+    <script src="/js/featherlight.min.js?1678171367"></script>
+    <script src="/js/highlight.pack.js?1678171367"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1677211254"></script>
-    <script src="/js/learn.js?1677211254"></script>
-    <script src="/js/hugo-learn.js?1677211254"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678171367"></script>
+    <script src="/js/learn.js?1678171367"></script>
+    <script src="/js/hugo-learn.js?1678171367"></script>
 
-    <link href="/mermaid/mermaid.css?1677211254" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1677211254"></script>
+    <link href="/mermaid/mermaid.css?1678171367" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678171367"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

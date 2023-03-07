@@ -11,8 +11,8 @@ pre : " <b> 3.1 </b> "
 ![DynamoDBConsole](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-1.png?featherlight=false&width=90pc)
 
 3. Enter table name: **Books**
-- Enter parition key: **id**
-- Enter sort key: **rv_id** (review id)
+- Enter parition key: `id`
+- Enter sort key: `rv_id` (review id)
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-2.png?featherlight=false&width=90pc)
 
@@ -37,9 +37,9 @@ So we have created the **Books** table with the Local secondary index of **name-
 
 {{%attachments title="Data" pattern=".*\.(json)$"/%}}
 
-- Open this file, replace all **<AWS-REGION>** with the region where you created the S3 **book-image-resize-store** bucket, for example: **ap-southeast-2**
+8. Open this file, replace all **`<AWS-REGION>`** with the region where you created the S3 **book-image-resize-store** bucket, for example: **ap-southeast-2**
 
-8. Run the following command in the directory where you save the dynamoDB.json
+9. Run the following command in the directory where you save the dynamoDB.json
 ```
 aws dynamodb batch-write-item --request-items file://dynamoDB.json
 ```

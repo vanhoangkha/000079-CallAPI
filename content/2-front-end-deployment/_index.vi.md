@@ -84,7 +84,7 @@ Bước đầu trong bài này, chúng ta sẽ host ứng dụng web (front-end)
 - Mở command-line/terminal trên máy bạn tại thư mục bạn muốn lưu source code
 - Sao chép câu lệnh dưới đây
 ```
-git clone https://github.com/PhamTHHanh/fcj-serverless-frontend.git
+git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-Workshop.git
 cd fcj-serverless-frontend
 yarn build
 ```
