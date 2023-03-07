@@ -87,6 +87,10 @@ def lambda_handler(event, context):
 Code xử lý ảnh mà người dùng muốn tải lên và được lưu trong S3 bucket
 {{% /notice %}}
 
+{{% notice warning %}}
+Nếu bạn tạo bộ chứa S3 có tên khác với lab, hãy thay chúng tại dòng 35 và 36 trong code
+{{% /notice %}}
+
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-3.png?featherlight=false&width=90pc)
 
 4. Cấp quyền cho Lambda function có thể ghi tệp vào S3 bucket.

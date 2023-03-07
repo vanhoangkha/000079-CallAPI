@@ -83,7 +83,11 @@ def lambda_handler(event, context):
 - Then, click **Deploy**
 
 {{% notice note %}}
-The code handles the images that the user wants to upload and is saved in the S3 bucket
+The new code handles the images that the user wants to upload and is saved in the S3 bucket
+{{% /notice %}}
+
+{{% notice warning %}}
+If you create S3 buckets with names different from the lab, replace them in lines 35 and 36 of code
 {{% /notice %}}
 
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-3.png?featherlight=false&width=90pc)

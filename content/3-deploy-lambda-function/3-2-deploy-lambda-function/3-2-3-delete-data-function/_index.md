@@ -83,6 +83,10 @@ def lambda_handler(event, context):
 
 ![LambdaListFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-19.png?featherlight=false&width=90pc)
 
+{{% notice warning %}}
+If you create S3 bucket with name different from the lab, replace it in line 42 of code
+{{% /notice %}}
+
 4. Next, give the Lambda function permission to delete object from the S3 bucket and access to DynamoDB table.
 - Click **Configuration** tab
 - Select **Permissions** pattern on the left menu
