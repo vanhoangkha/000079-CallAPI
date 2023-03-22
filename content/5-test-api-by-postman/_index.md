@@ -86,7 +86,7 @@ Since the delete Lambda function on execution deletes images uploaded by the use
 ![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-12.png?featherlight=false&width=90pc)
 
 8. Back to Postman, add a new tab to call the delete API
-- Select **GET** method
+- Select **DELETE** method
 - Enter URL of the deleting API that recorded from the previous step, replace **/{id}** with **/5**
 - Click **Send**
 
