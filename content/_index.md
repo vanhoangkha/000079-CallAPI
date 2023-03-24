@@ -1,10 +1,10 @@
 ---
-title : "Serverless - Guide to writing Front-end to call API Gateway"
+title : "Serverless - Build Frontend to call API Gateway"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
-# Serverless - Guide to writing Front-end to call API Gateway
+# Serverless - Build Frontend to call API Gateway
 
 #### Overview
 
