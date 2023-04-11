@@ -84,6 +84,7 @@ In the first step in this workshop, we will host the web application (front-end)
 ```
 git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-Workshop.git
 cd fcj-serverless-frontend
+npm install
 yarn build
 ```
 14. We have finished building the front-end. Next execute the following command to upload the **build** folder to S3
