@@ -25,7 +25,7 @@
 	"title": "Tạo bảng trong DynamoDB",
 	"tags": [],
 	"description": "",
-	"content": " Mở bảng điều khiển DynamoDB Ấn nút Create table Nhập tên cho bảng: Books Nhập parition key: id Nhập sort key: rv_id (review id) Kéo xuống phần Table settings, chọn Customize settings Sau đó, chọn On-demand Ấn nút Create local Index Nhập sort key: name Ấn nút Create index Kéo xuống cuối trang, ấn nút Create table Vậy là bạn đã tạo xong bảng Books với Local secondary index là name-index\nĐể thêm dữ liệu cho bảng, bạn có thể tải tệp dưới đây: Data dynamoDB.json (4 ko) Mở tệp, sau đó thay toàn bộ \u0026lt;AWS-REGION\u0026gt; bằng vùng mà bạn tạo S3 bucket book-image-resize-store, ví dụ: ap-southeast-2\nChạy câu lệnh sau tại thư mục mà bạn lưu tệp dynamoDB.json\naws dynamodb batch-write-item --request-items file://dynamoDB.json "
+	"content": " Mở bảng điều khiển DynamoDB Ấn nút Create table Nhập tên cho bảng: Books Nhập parition key: id Nhập sort key: rv_id (review id), kiểu Number Kéo xuống phần Table settings, chọn Customize settings Sau đó, chọn On-demand Ấn nút Create local Index Nhập sort key: name Ấn nút Create index Kéo xuống cuối trang, ấn nút Create table Vậy là bạn đã tạo xong bảng Books với Local secondary index là name-index\nĐể thêm dữ liệu cho bảng, bạn có thể tải tệp dưới đây: Data dynamoDB.json (4 ko) Mở tệp, sau đó thay toàn bộ \u0026lt;AWS-REGION\u0026gt; bằng vùng mà bạn tạo S3 bucket book-image-resize-store, ví dụ: ap-southeast-2\nChạy câu lệnh sau tại thư mục mà bạn lưu tệp dynamoDB.json\naws dynamodb batch-write-item --request-items file://dynamoDB.json "
 },
 {
 	"uri": "/vi/4-config-api-gw/4-1-create-methods/",

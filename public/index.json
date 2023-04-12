@@ -4,7 +4,7 @@
 	"title": "Create DynamoDB table",
 	"tags": [],
 	"description": "",
-	"content": " Open DynamoDB console Click Create table Enter table name: Books Enter parition key: id Enter sort key: rv_id (review id) Scroll down to Table settings pattern, select Customize settings Then, select On-demand Click Create local Index Enter sort key: name Click Create index Scroll down to the bottom, click Create table So we have created the Books table with the Local secondary index of name-index\nTo add data to the table, you can download the file below: Data dynamoDB.json (4 ko) Open this file, replace all \u0026lt;AWS-REGION\u0026gt; with the region where you created the S3 book-image-resize-store bucket, for example: ap-southeast-2\nRun the following command in the directory where you save the dynamoDB.json\naws dynamodb batch-write-item --request-items file://dynamoDB.json "
+	"content": " Open DynamoDB console Click Create table Enter table name: Books Enter parition key: id Enter sort key: rv_id (review id), type is Number Scroll down to Table settings pattern, select Customize settings Then, select On-demand Click Create local Index Enter sort key: name Click Create index Scroll down to the bottom, click Create table So we have created the Books table with the Local secondary index of name-index\nTo add data to the table, you can download the file below: Data dynamoDB.json (4 ko) Open this file, replace all \u0026lt;AWS-REGION\u0026gt; with the region where you created the S3 book-image-resize-store bucket, for example: ap-southeast-2\nRun the following command in the directory where you save the dynamoDB.json\naws dynamodb batch-write-item --request-items file://dynamoDB.json "
 },
 {
 	"uri": "/4-config-api-gw/4-1-create-methods/",

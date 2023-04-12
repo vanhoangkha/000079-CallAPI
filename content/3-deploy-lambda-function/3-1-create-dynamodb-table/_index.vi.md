@@ -12,7 +12,7 @@ pre : " <b> 3.1 </b> "
 
 3. Nhập tên cho bảng: **Books**
 - Nhập parition key: `id`
-- Nhập sort key: `rv_id` (review id)
+- Nhập sort key: `rv_id` (review id), kiểu **Number**
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-2.png?featherlight=false&width=90pc)
 
@@ -44,4 +44,4 @@ Vậy là bạn đã tạo xong bảng **Books** với Local secondary index là
 aws dynamodb batch-write-item --request-items file://dynamoDB.json
 ```
 
-![BooksData](/images/5-test-api-by-postman/5-test-api-by-postman-3.png?featherlight=false&width=90pc)
+![BooksData](/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&width=90pc)
