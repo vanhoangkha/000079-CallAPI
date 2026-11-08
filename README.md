@@ -22,7 +22,7 @@ In the last post, we know how to create and use Lambda functions that interact w
    - Setting and enable CORS
 5. Test APIs by Postman
 6. Test APIs with front-end
-7. Cleanup
+7. Clean up
 
 ## Prerequisites
 
